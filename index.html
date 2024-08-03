@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .card{
+            background-color: white;
+            height: 350px;
+            width: 280px;
+            padding: 10px 10px;
+            border-color: black;
+            border: 2px solid;
+            margin: 30px;
+            
+        }
+        .photo{
+            width: 250px;
+            border: 1px solid grey;
+            margin: 10px auto;
+            display: block;
+        }
+        .row{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .column{
+            display: flex;
+            flex-direction: column;
+            justify-content: center+;
+            align-items: start;
+            width: 30%;
+        }
+        .desc{
+            display: flex;
+            align-items: start;
+        }
+        .heading{
+            font-size: 200px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            width: 70%;
+            margin: 50px 50px;
+        }
+        .heading:hover{
+            transition: 2s;
+            color:palevioletred;
+        }
+        </style>
+</head>
+<body>
+    <div class="row">
+        <div class="card">
+            <img src="https://assets.vogue.in/photos/63d0f920e3b54291fa98dbf1/1:1/w_1600%2Cc_limit/Kiara%2520Advani%2520.jpg" alt="kiara" class="photo">
+                <p style="margin: 20px 10px;"><i>f/5.6</i></p>
+                <p style="margin:10px 10px;">Date: 31-07-2024</p>
+            </div>
+        
+            <div class="card">
+                <img src="https://femina.wwmindia.com/content/2023/oct/kiara-31697101790.jpg" alt="kiara" class="photo" height="290px">
+                <p style="margin:auto"><i>f/5.6</i></p>
+                <p style="margin:auto">Date: 31-07-2024</p>
+            </div>
+            
+            <div class="card">
+                <img src="https://femina.wwmindia.com/content/2023/oct/kiara-71697101874.jpg" alt="kiara" class="photo" height="290px">
+                <p style="margin: auto;"><i>f/5.6</i></p>
+                <p style="margin:auto;">Date: 31-07-2024</p>
+            </div>
+            
+            <div class="card">
+                <img src="https://im.rediff.com/getahead/2024/feb/22kiara2.jpg?w=670&h=900" alt="kiara" class="photo">
+                <p style="margin:auto"><i>f/5.6</i></p>
+                <p style="margin:auto">Date: 31-07-2024</p>
+            </div>
+    </div>
+<div class="desc">   
+    <div class="column">
+    <div class="card">
+        <img src="https://assets.vogue.in/photos/63d0f920e3b54291fa98dbf1/1:1/w_1600%2Cc_limit/Kiara%2520Advani%2520.jpg" alt="kiara" class="photo">
+            <p style="margin: 20px 10px;"><i>f/5.6</i></p>
+            <p style="margin:10px 10px;">Date: 31-07-2024</p>
+        </div>
+    
+        <div class="card">
+            <img src="https://femina.wwmindia.com/content/2023/oct/kiara-31697101790.jpg" alt="kiara" class="photo" height="290px">
+            <p style="margin:auto"><i>f/5.6</i></p>
+            <p style="margin:auto">Date: 31-07-2024</p>
+        </div>
+        
+        <div class="card">
+            <img src="https://femina.wwmindia.com/content/2023/oct/kiara-71697101874.jpg" alt="kiara" class="photo" height="290px">
+            <p style="margin: auto;"><i>f/5.6</i></p>
+            <p style="margin:auto;">Date: 31-07-2024</p>
+        </div>
+        
+        <div class="card">
+            <img src="https://im.rediff.com/getahead/2024/feb/22kiara2.jpg?w=670&h=900" alt="kiara" class="photo">
+            <p style="margin:auto"><i>f/5.6</i></p>
+            <p style="margin:auto">Date: 31-07-2024</p>
+        </div>
+    </div>
+<h1 class="heading">KIARA<br>ADVANI</h1></div>
+</body>
+</html>
